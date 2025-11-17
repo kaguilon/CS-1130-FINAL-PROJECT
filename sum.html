@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Arithmetic Loops | Sum</title>
+</head>
+<body>
+    
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__logo"><a href="#">Kylle Aguilon</a></li>
+            <li class="nav__listitem"><a href="index.html">Home</a></li>
+            <li class="nav__listitem"><a href="conversion.html">Conversion</a>
+                <ul class="nav__listitemdrop">
+                    <li><a href="celtofahr.html">Celsius to Fahrenheit</a></li>
+                    <li><a href="fahrtocel.html">Fahrenheit to Celsius</a></li>
+                    <li><a href="mttoft.html">Meters to Feet</a></li>
+                    <li><a href="fttomt.html">Feet to Meters</a></li>
+                </ul>
+            </li>
+            <li class="nav__listitem"><a href="taxcalc.html">Income Tax Calculator</a></li>
+            <li class="nav__listitem"><a href="loops.html">Arithmetic Loops</a>
+                <ul class="nav__listitemdrop">
+                    <li><a href="factorial.html">Factorial (While Loop)</a></li>
+                    <li><a href="sum.html">Sum (Do While Loop)</a></li>
+                    <li><a href="ave.html">Average (For Loop)</a></li>
+                </ul>
+            </li>
+            <li class="nav__listitem"><a href="payroll.html">Simple Payroll</a></li>
+        </ul>
+    </nav>
+
+    <div class="content1">
+        <div class="converter">
+            <h3>Sum (Do While Loop)</h3>
+            <div class="input-area">
+                <input class="numinput" type="number" id="numinput" placeholder="ex. 00">
+                <button class="sumbtns" onclick="addNumber()">Add Number</button>
+            </div>
+            <div>
+                <h3>Numbers Entered:</h3>
+                <p id="numlist"></p>
+                <button class="sumbtns" onclick="calculateSum()">Calculate Sum</button>
+                <div class="sumoutput">
+                    <h3>Total Sum:</h3>
+                    <div class="sumoutputdisplay">
+                        <p class="sumdisplay" id="sumoutput"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="loops.js"></script>
+</body>
+</html>
